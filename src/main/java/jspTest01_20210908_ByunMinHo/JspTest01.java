@@ -45,8 +45,8 @@ public class JspTest01 extends HttpServlet {
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
 		String mail = request.getParameter("mail");
-		String job1 = request.getParameter("job");
-		String job2 = getInitParameter("job");
+		String job = request.getParameter("job");
+		String jobInt = getInitParameter("job");
 		
 		response.setContentType("text/html; charset=EUC-KR");
 		PrintWriter writer = response.getWriter();
@@ -56,13 +56,13 @@ public class JspTest01 extends HttpServlet {
 		writer.println("비밀번호 : "+pw+"<br/>");
 		writer.println("이름 : "+name+"<br/>");
 		writer.println("E-mail : "+email+ "@"+ mail + "<br/>");
-		writer.println("직업 : "+job1+"<br/>");
-		if(job1 =="") {
-			writer.println("직업 : "+job2+"<br/>");
+		if(job =="") {
+			writer.println("직업 : "+jobInt);
 		}
+		else {writer.println("직업 : "+job);}
+
 		
-		writer.println("</body></html>");
-		
+		writer.println("</body></html>");	
 	}
 
 }

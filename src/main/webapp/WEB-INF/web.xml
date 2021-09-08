@@ -12,7 +12,7 @@
   
   <servlet>
   	<servlet-name>servletInitParam</servlet-name>
-  	<servlet-class>com.java.ex.ServletInitParam</servlet-class>
+  	<servlet-class>jspTest01_20210908_ByunMinHo</servlet-class>
   	
   	<init-param>
 		<param-name>job</param-name>
@@ -25,4 +25,5 @@
   	<servlet-name>servletInitParam</servlet-name>
   	<url-pattern>/InitParam</url-pattern>
   </servlet-mapping>
+  
 </web-app>
